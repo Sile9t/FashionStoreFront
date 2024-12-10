@@ -1,0 +1,24 @@
+@charset "UFT-8";
+
+body {
+    .pointer {
+
+    }
+
+    .new-in-wrapper {
+
+        .sort-direction {
+            .icon-wrapper {
+
+            }
+        }
+
+        .cards-wrapper {
+
+            .card {
+                width: 20%;
+            }
+        }
+    }
+
+}
