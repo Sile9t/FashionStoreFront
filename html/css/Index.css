@@ -9,9 +9,18 @@
     src: url("/html/source/font/Angst-Thin.otf");
 }
 
+@font-face {
+    font-family: Inter;
+    src: url("/html/source/font/Inter-VariableFont_opsz\,wght.ttf");
+    font-size: 12px;
+    font-weight: 300;
+}
+
 body {
+    
     #main {
         padding: 10px 10%;
+        font-family: Inter;
 
         .pointer {
             margin-bottom: 2rem;
@@ -27,71 +36,77 @@ body {
                     margin: .5rem 0 0 1rem;
                 }
             }
-    
-            .cards-wrapper {
-                margin-bottom: 4rem;
-                .card {
-                    width: 20%;
-                    padding: 1rem;
-                    border: 0;
-                    
-                    .favourite {
-                        position: absolute;
-                        padding: 1rem;
-                        top: 1rem;
-                        right: 1rem;
-                        z-index: 1;
-                        border: 0;
-                        background-color: transparent;
-                    }
+        }
 
-                    .favourite:hover {
-                        scale: 1.1;
-                        cursor: pointer;
-                    }
-
-                    a {
-                        color: black;
-                        text-decoration: none;
-
-                        .card-body {
-                            border: 1px solid rgba(0, 0, 0, .125);
-                            border-radius: .5rem;
-                            margin-bottom: 1rem;
-                            padding-top: 2rem;
-                            aspect-ratio: 2 / 3;
-                            box-shadow: .35rem .35rem 1.5rem var(--card-img-shadow);
-                        }
-                        
-                        .card-text {
-                            padding: .25rem;
-                        
-                            .season {
-                                
-                            }
-                            
-                            .brand {
-                                font-weight: 600;
-                            }
-                            
-                            .description {
-                                line-height: 1rem;
-                                height: 4rem;
-                            }
-                        }
-                    }
-                }
+        .cards-wrapper {
+            margin-bottom: 4rem;
+            .card {
+                width: 20%;
+                padding: 1rem;
+                border: 0;
                 
-                .card:hover {
-                    scale: 1.001;
+                .favourite {
+                    position: absolute;
+                    padding: 1rem;
+                    top: 1rem;
+                    right: 1rem;
+                    z-index: 1;
+                    border: 0;
+                    background-color: transparent;
                 }
+
+                .favourite:hover {
+                    scale: 1.1;
+                    cursor: pointer;
+                }
+
+                a {
+                    color: black;
+                    text-decoration: none;
+
+                    .card-body {
+                        border: 1px solid rgba(0, 0, 0, .125);
+                        border-radius: .5rem;
+                        margin-bottom: 1rem;
+                        padding: 2rem 1rem;
+                        aspect-ratio: 2 / 3;
+                        box-shadow: .35rem .35rem 1.5rem var(--card-img-shadow);
+                        
+                        img {
+                            max-height: 100%;
+                        }
+                    }
+                    
+                    .card-text {
+                        padding: .25rem;
+                    
+                        .season {
+                            
+                        }
+                        
+                        .brand {
+                            font-weight: 650;
+                        }
+                        
+                        .description {
+                            line-height: 1rem;
+                            height: 4rem;
+                        }
+                    }
+                }
+            }
+            
+            .card:hover {
+                scale: 1.001;
             }
         }
 
         .presentation-wrapper {
+            margin-bottom: 3rem;
+            
             .presentation {
                 width: 50%;
-
+                
                 .header {
                     font-family: Angst;
                     margin-bottom: 3rem;
@@ -101,7 +116,6 @@ body {
                     margin-bottom: 2rem;
 
                     p {
-                        /* text-justify: center; */
                         text-align: center;
                         width: 80%;
                     }
@@ -124,9 +138,55 @@ body {
 
             .img-wrapper {
                 width: 30%;
+
                 img {
                     width: 100%;
                 }
+            }
+        }
+
+        .accessories-presentation-wrapper {
+            margin: 2rem 0;
+
+            .accessories-presentation {
+                width: 60%;
+
+                img {
+                    margin: 2rem 0;
+                }
+
+                h2 {
+                    font-family: Angst;
+                    margin: 1rem 0;
+                }
+            }
+        }
+
+        .topic-cards-wrapper {
+            .topic-card {
+                margin: 2rem;
+                width: 20%;
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 100%;
+                        border-radius: 2rem;
+                        box-shadow: 0rem .35rem 1.5rem var(--card-img-shadow);
+                        margin-bottom: 2rem;
+                    }
+                    
+                    p {
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        color: black;
+                    }
+                }
+            }
+
+            .topic-card:hover {
+                scale: 1.005;
             }
         }
     }
