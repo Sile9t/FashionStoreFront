@@ -29,6 +29,7 @@ body {
         .new-in-wrapper {
     
             .sort-direction {
+                margin: 1vw 0;
                 .sort-text {
                     font-weight: 500;
                 }
@@ -41,8 +42,7 @@ body {
         .cards-wrapper {
             margin-bottom: 4rem;
             .card {
-                width: 20%;
-                /* padding: 1rem; */
+                width: 15vw;
                 border: 0;
                 
                 .favourite {
@@ -81,9 +81,9 @@ body {
                     .card-text {
                         padding: .25rem;
                     
-                        .season {
+                        /* .season {
                             
-                        }
+                        } */
                         
                         .brand {
                             font-weight: 650;
