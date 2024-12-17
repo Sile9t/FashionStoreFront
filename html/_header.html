@@ -1,5 +1,9 @@
 <head>
     <link rel="stylesheet" href="/html/css/_header.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
 </head>
 <body>
     <header class="d-flex flex-column justify-content-center">
@@ -18,8 +22,18 @@
         </div>
         <div class="navbar-and-search-wrapper d-flex">
             <ul class="navbar d-inline-flex flex-fill justify-content-between align-content-end">
-                <li><a href="">Подарки</a></li>
-                <li><a href="">Новинки</a></li>
+                <li>
+                    <button class="navbar" type="button" data-bs-toggle="collapse" data-bs-target="#presents-external-content" 
+                        aria-controls="presents-external-content" aria-expanded="false" aria-label="Toggle navigation">
+                        Подарки
+                    </button>
+                </li>
+                <li>
+                    <button class="navbar" type="button" data-bs-toggle="collapse" data-bs-target="#new-external-content" 
+                        aria-controls="presents-external-content" aria-expanded="false" aria-label="Toggle navigation">
+                        Новинки
+                    </button>
+                </li>
                 <li><a href="">Бренды</a></li>
                 <li><a href="">Одежда</a></li>
                 <li><a href="">Обувь</a></li>
@@ -71,4 +85,85 @@
             </div>
         </div>
     </header>
+    <div class="modal-body collapse" id="presents-external-content">
+        <div class="d-flex flex-row">
+            <div class="navbars-wrapper d-flex flex-fill">
+                <div class="navbar d-flex flex-column justify-content-start">
+                    <h3>Подарки</h3>
+                    <ul>
+                        <li><a href="">Подарки-бестселлеры</a></li>
+                        <li><a href="">Приятные мелочи</a></li>
+                        <li><a href="">Лучшие аксессуары</a></li>
+                        <li><a href="">Культовые сумки pre-owned</a></li>
+                        <li><a href="">Часы и украшения</a></li>
+                        <li><a href="">Подарки: товары для дома</a></li>
+                        <li><a href="">Необычные подарки</a></li>
+                        <li><a href="">Эксклюзивные подарки</a></li>
+                        <li><a href="">Подарки для него</a></li>
+                        <li><a href="">Подарки для детей</a></li>
+                    </ul>
+                </div>
+                <div class="navbar d-inline-flex flex-column justify-content-start">
+                    <h3>По цене</h3>
+                    <ul>
+                        <li><a href="">Подарки от 500 &#x20bd;</a></li>
+                        <li><a href="">Подарки от 2000 &#x20bd;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="relevant-wrapper">
+                <img src="/html/source/img/navigationExternal/presentsExt.png" alt="">
+                <div class="text-wrapper">
+                    <p>Актуально</p>
+                    <h3>Лучшие подарки</h3>
+                    <a href="">Посмотреть подборку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body collapse" id="new-external-content">
+        <div class="d-flex flex-row">
+            <div class="navbars-wrapper d-flex flex-fill">
+                <div class="navbar d-flex flex-column justify-content-start">
+                    <h3>Новый сезон</h3>
+                    <ul>
+                        <li><a href="">Новинки</a></li>
+                        <li><a href="">Классика</a></li>
+                        <li><a href="">Тренды</a></li>
+                        <li><a href="">Элегантность</a></li>
+                        <li><a href="">StreetWear</a></li>
+                        <li><a href="">Женственность</a></li>
+                    </ul>
+                </div>
+                <div class="navbar d-inline-flex flex-column justify-content-start">
+                    <h3>Тренды</h3>
+                    <ul>
+                        <li><a href="">Новый сезон</a></li>
+                        <li><a href="">Осенняя обувь</a></li>
+                        <li><a href="">Прозрачные детали</a></li>
+                        <li><a href="">Замша</a></li>
+                        <li><a href="">Бестселлеры</a></li>
+                        <li><a href="">Эксклюзивы</a></li>
+                        <li><a href="">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="navbar d-inline-flex flex-column justify-content-start">
+                    <h3>Специально для вас</h3>
+                    <ul>
+                        <li><a href="">Ваша еженедельная подборка</a></li>
+                        <li><a href="">Новинки в вашем стиле</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="relevant-wrapper">
+                <img src="/html/source/img/navigationExternal/newExt.png" alt="">
+                <div class="text-wrapper">
+                    <p>Актуально</p>
+                    <h3>Новая классика</h3>
+                    <a href="">Посмотреть подборку</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="/html/js/_header.js"></script>
