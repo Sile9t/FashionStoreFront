@@ -183,3 +183,65 @@
         }
     }
 }
+
+#imgsModal {
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                .btn-close {
+                    width: 1.3vw;
+                    height: 1.3vw;
+                    background-size: 1.3vw 1.3vw;
+                }
+            }
+
+            .modal-body {
+                .carousel {
+                    padding-bottom: 3vw;
+                    .carousel-indicators {
+                        button {
+                            width: 4vw;
+                            height: .23vw;
+                            border-radius: .63vw;
+                            opacity: .3;
+
+                            &.active {
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    .carousel-inner {
+                        .carousel-item {
+                            justify-items: center;
+
+                            img {
+                                object-fit: cover;
+                                height: 40vw;
+                            }
+                        }
+                        
+                    }
+
+                    .carousel-control-prev {
+                        .carousel-control-prev-icon {
+                            width: 3vw;
+                            height: 3vw;
+                        }
+                    }
+
+                    .carousel-control-next {
+                        .carousel-control-next-icon {
+                            width: 3vw;
+                            height: 3vw;
+                        }
+                    }
+                }
+            }
+
+            .modal-footer {
+
+            }
+        }
+    }
+}

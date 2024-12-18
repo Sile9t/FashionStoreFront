@@ -6,6 +6,8 @@
 	
 }));
 
+
+
 // $('.collapse').on('show.be.collapse', function(e, [eventInfo]) {
 //     let collapseList = $(this).parent();
 //     for(let i = 0; i < collapseList.length; i++) {
