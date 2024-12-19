@@ -4,36 +4,48 @@
 }(function($, window, document) {
 	'use strict';
 	
+	setFuncToAllExt();
 }));
 
+function setFuncToAllExt() {
+	let btnsList = document.getElementsByClassName('collapse-btn');
+	console.log('btnsList: ', btnsList, '\n');
 
+	for (btn of btnsList){
+		console.log('currentBtn:', btn);
+		btn.addEventListener('click', () => hideAllExtensionsAndOpenRequired(btn));
+	}
+}
 
-// $('.collapse').on('show.be.collapse', function(e, [eventInfo]) {
-//     let collapseList = $(this).parent();
-//     for(let i = 0; i < collapseList.length; i++) {
-//         let collapse = collapseList[i];
-//         collapse.trigger('hide.bs.collapse', [eventInfo]);
-//     }
+function hideAllExtensionsAndOpenRequired(clickedBtn) {
+	let extList = document.getElementsByClassName('collapse');
+	console.log('extList:', extList);
 
-//     $(this).trigger('show.bs.collapse', [eventInfo]);
-// });
+	for (ext of extList){
+		if (ext.classList.contains('show')) {
+			let collapse = bootstrap.Collapse.getInstance(ext);
+			collapse.hide();
+		}
+	}
+}
 
-// $(function() {
-//     var collapseList = document.getElementsByClassName('collapse');
-//     for(let i = 0; i < collapseList.length; i++) {
-//         let collapse = collapseList[i];
-//         collapse.addEventListener('show.bs.collapse', hideAllOtherCollapses(collapseList));
-//     }
-// });
+let signBtn = document.getElementById('sign-in-btn');
+let regBtn = document.getElementById('reg-btn');
 
-// function hideAllOtherCollapses(collapseList) {
-//     for(let i = 0; i < collapseList.length; i++){
-//         let collapse = collapseList[i];
-//         let hideEvent = new Event('hide.bs.collapse');
+function showForm(e) {
+	let signForm = document.getElementById('sign-in-form');
+	let regForm = document.getElementById('reg-form');
 
-//         collapse.dispatchEvent(hideEvent);
-//     }
-
-//     let showEvent = new Event('show.bs.collapse');
-//     $(this).dispatchEvent(showEvent);
-// }
+	if (e == regBtn) {
+		signBtn.classList.remove('selected');
+		regBtn.classList.add('selected');
+		signForm.classList.add('visually-hidden');
+		regForm.classList.remove('visually-hidden');
+	}
+	else if (e == signBtn) {
+		signBtn.classList.add('selected');
+		regBtn.classList.remove('selected');
+		signForm.classList.remove('visually-hidden');
+		regForm.classList.add('visually-hidden');
+	}
+}

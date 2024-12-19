@@ -30,6 +30,7 @@
     h2, h3 {
         text-transform: uppercase;
         font-weight: 600;
+        margin-bottom: 2vw;
     }
 
     .sort-direction {
@@ -80,6 +81,7 @@
             border: 0;
             margin-right: 3rem;
             margin-bottom: 6rem;
+            transition: 1s ease;
             
             .favourite {
                 position: absolute;
@@ -89,10 +91,12 @@
                 z-index: 1;
                 border: 0;
                 background-color: transparent;
+                transition: 1s ease;
             }
     
             .favourite:hover {
                 scale: 1.1;
+                transition: 1s ease;
                 cursor: pointer;
             }
     
@@ -135,6 +139,7 @@
         
         .card:hover {
             scale: 1.01;
+            transition: 1s ease;
     
             .card-body {
                 box-shadow: .35rem .35rem 2.5rem var(--card-img-shadow);

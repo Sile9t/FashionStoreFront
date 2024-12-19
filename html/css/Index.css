@@ -103,6 +103,7 @@ body {
                         border-radius: 2rem;
                         box-shadow: .35rem .35rem 1.5rem var(--card-img-shadow);
                         object-fit: cover;
+                        transition: 1s ease;
                     }
                     
                     p {
@@ -117,8 +118,8 @@ body {
             .topic-card:hover {
                 
                 img {
-                    scale: 1.005;
-                    transition: 5s ease;
+                    scale: 1.05;
+                    transition: 1s ease;
                     box-shadow: .35rem .35rem 2.5rem var(--card-img-shadow);
                 }
             }
