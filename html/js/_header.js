@@ -9,18 +9,15 @@
 
 function setFuncToAllExt() {
 	let btnsList = document.getElementsByClassName('collapse-btn');
-	console.log('btnsList: ', btnsList, '\n');
-
+	
 	for (btn of btnsList){
-		console.log('currentBtn:', btn);
 		btn.addEventListener('click', () => hideAllExtensionsAndOpenRequired(btn));
 	}
 }
 
 function hideAllExtensionsAndOpenRequired(clickedBtn) {
 	let extList = document.getElementsByClassName('collapse');
-	console.log('extList:', extList);
-
+	
 	for (ext of extList){
 		if (ext.classList.contains('show')) {
 			let collapse = bootstrap.Collapse.getInstance(ext);

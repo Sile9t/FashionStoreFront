@@ -8,7 +8,7 @@
         rel="stylesheet" 
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
         crossorigin="anonymous">
-    <link rel="stylesheet" href="/html/css/utilities.css">
+    <link rel="stylesheet" href="/html/css/_utilities.css">
     <link rel="stylesheet" href="/html/css/Index.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -19,20 +19,27 @@
 <body>
     <div id="header"></div>
     <main id="main" class="justify-content-around">
-        <div class="pointer">   
-            Главная > New In
-        </div>
+        <nav class="pointer " aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="Index.html">Главная</a></li>
+              <li class="breadcrumb-item"><a href="">New-In</a></li>
+            </ol>
+        </nav>
         <div class="cards-list-wrapper">
             <h2>NEW IN</h2>
-            <div class="sort-direction d-flex justify-content-end">
-                <div class="sort-text d-flex flex-wrap align-content-center">
-                    Сортировка
+            <div class="filter-sort-group d-flex justify-content-end">
+                <div class="sort-direction btn-group d-flex justify-content-end">
+                    <button class="sort-btn dropdown-toggle" type="button" id="sort-dropdown" 
+                        data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                        Сортировка
+                    </button>
+                    <ul class="sort-dropdown dropdown-menu dropdown-menu-end" aria-labelledby="sort-dropdown">
+                        <li><a class="dropdown-item active" href="">Выбор стилистов</a></li>
+                        <li><a class="dropdown-item" href="">Новинки</a></li>
+                        <li><a class="dropdown-item" href="">По убыванию цены</a></li>
+                        <li><a class="dropdown-item" href="">По возрастанию цены</a></li>
+                    </ul>
                 </div>
-                <button class="sort-btn" title=" по возрастанию" data-sort="asc">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-                      </svg>
-                </button>
             </div>
             <div class="cards-wrapper d-flex flex-wrap justify-content-between">
                 <div class="card" title="топ с вырезом халтер">
@@ -359,7 +366,7 @@
                 <div class="body">
                     <div class="mail-sub d-flex flex-column">
                         <div class="checkbox-wrapper d-flex">
-                            <input type="checkbox" name="" id="mail" title="Почта">
+                            <input type="checkbox" name="" id="mail" title="Почта" checked>
                             <p>Почта</p>
                         </div>
                         <input type="text" placeholder="Email" id="email" autocomplete="email">

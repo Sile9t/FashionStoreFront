@@ -22,7 +22,14 @@
 }
 
 .pointer {
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-top: 3rem;
+    --bs-breadcrumb-divider: '>';
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .cards-list-wrapper {
@@ -33,39 +40,26 @@
         margin-bottom: 2vw;
     }
 
-    .sort-direction {
+    .filter-sort-group {
         margin: 1vw 0;
 
-        .filter-btns {
-
-            .filter-btn {
-                border-radius: .75rem;
-                width: 9vw;
-                margin: .5rem;
-                background-color: white;
-                color: black;
-                border: 2px solid black;
+        .sort-direction {
+            .sort-btn {
                 height: 2.5vw;
+                border: 0;
+                background-color: transparent;    
+            }
 
-                svg {
-                    width: 24px;
-                    height: 24px;
+            .sort-dropdown {
+                border: 1px solid grey;
+                border-radius: .5rem;
+                box-shadow: 0px 5px 5px var(--card-img-shadow);
+                padding: .75rem 0rem;
+
+                .dropdown-item {
+                    padding: .25rem 1.25rem;
                 }
             }
-
-            .all-filters {
-                font-weight: 600;
-            }
-        }
-
-        .sort-text {
-            font-weight: 500;
-        }
-
-        .sort-btn {
-            margin-left: 1rem;
-            border: 0;
-            background-color: transparent;
         }
     }
 
@@ -92,6 +86,11 @@
                 border: 0;
                 background-color: transparent;
                 transition: 1s ease;
+            }
+
+
+            .favourite.chacked {
+                color: red;
             }
     
             .favourite:hover {
@@ -189,6 +188,26 @@
     }
 }
 
+.filter-btns {
+    .filter-btn {
+        border-radius: .75rem;
+        width: 9vw;
+        margin: .5rem;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        height: 2.5vw;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .all-filters {
+        font-weight: 600;
+    }
+}
 
 .question-topics-wrapper {
     a {
