@@ -25,43 +25,7 @@
 		});
 	});
 
-	// $(function() {
-	// 	let favBtns = document.getElementsByClassName('favourite');
-
-	// 	for (let btn of favBtns) {
-	// 		btn.addEventListener('click', () => function(btn){
-	// 			if (btn.classList.contains('checked')) {
-	// 				btn.classList.remove('checked');
-	// 				//call remove from favourite
-	// 			}
-	// 			else {
-	// 				btn.classList.add('checked');
-	// 				//call add to favourite
-	// 			}
-	// 		});
-	// 	}
-	// });
-
-	setFavBtnsClick();
 }));
-
-function setFavBtnsClick(){
-	let favBtns = document.getElementsByClassName('favourite');
-	// console.log('btns: ', favBtns);
-	
-	for (let btn of favBtns) {
-		btn.addEventListener('click', () => function(btn){
-			console.log('btn: ', btn, 'classList: ', btn.classList);
-	
-			if (btn.classList.contains('checked')) {
-				btn.classList.remove('checked');
-			}
-			else {
-				btn.classList.add('checked');
-			}
-		});
-	}
-}
 
 function topFunction() {
 	document.body.scrollTop = 0;

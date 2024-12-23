@@ -93,16 +93,73 @@
                         </a>
                     </div>
                     <div class="person-wrapper d-flex flex-row align-items-top">
-                        <div class="person-icon icon">
-                            <button type="button" title="Профиль" data-bs-toggle="modal" data-bs-target="#sign-in">
+                        <input type="hidden" id="userIsLogged" value="false">
+                        <div class="person-icon icon dropdown">
+                            <button class="d-flex flex-row" type="button" id="profile" title="Профиль" data-bs-toggle="modal" data-bs-target="#sign-in">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
                                 </svg>
+                                <div class="text-info d-flex flex-row justify-content-between align-items-center invisible">
+                                    <p class="user-name text">Maria</p>
+                                    <p class="user-rank text">Bronze</p>
+                                </div>
                             </button>
+                            <div class="profile-dropdown-menu dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                                <div class="profile-dropdown-menu-content">
+                                    <svg class="bi bi-caret-up-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                                    </svg>
+                                    <div class="dropdown-menu-header">
+                                        <div class="btn-close-wrapper d-flex flew-row justify-content-end">
+                                            <button type="button" class="btn-close" aria-label="Close"></button>
+                                        </div>
+                                        <h5 class="user-name modal-title text" id="profileModalLabel">Maria</h5>
+                                    </div>
+                                    <div class="dropdown-menu-body">
+                                        <ul class="dropdown-menu-list">
+                                            <li><a class="dropdown-item" href="">Программа лояльности</a></li>
+                                            <li><a class="dropdown-item" href="">Заказы и возвраты</a></li>
+                                            <li><a class="dropdown-item" href="">Кредит</a></li>
+                                            <li><a class="dropdown-item" href="">Личные данные и безопасность</a></li>
+                                            <li><a class="dropdown-item" href="">Настройки и предпочтения</a></li>
+                                            <li><a class="dropdown-item" href="">Реферальная программа</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="into-account-btn-wrapper d-flex flex-row justify-content-end">
+                                        <a href="">
+                                            <button class="into-account-btn" type="button">В личный кабинет</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-info d-flex flex-row justify-content-between align-items-center visually-hidden">
-                            <p class="user-name text">Maria</p>
-                            <p class="user-rank text">Bronze</p>
+                        <div class="popover invisible" tabindex="-1" id="profileModal" aria-labelledby="profileModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                                      </svg>
+                                    <div class="">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h5 class="user-name modal-title text" id="profileModalLabel">Maria</h5>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a href="">Программа лояльности</a></li>
+                                            <li><a href="">Заказы и возвраты</a></li>
+                                            <li><a href="">Кредит</a></li>
+                                            <li><a href="">Личные данные и безопасность</a></li>
+                                            <li><a href="">Настройки и предпочтения</a></li>
+                                            <li><a href="">Реферальная программа</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <button type="button">В личный кабинет</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="favourite-icon icon">
@@ -138,7 +195,7 @@
                     <div class="navbar d-flex flex-column justify-content-start">
                         <h3>Подарки</h3>
                         <ul>
-                            <li><a href="prodList.html">Подарки-бестселлеры</a></li>
+                            <li><a href="_prodList.html">Подарки-бестселлеры</a></li>
                             <li><a href="">Приятные мелочи</a></li>
                             <li><a href="">Лучшие аксессуары</a></li>
                             <li><a href="">Культовые сумки pre-owned</a></li>

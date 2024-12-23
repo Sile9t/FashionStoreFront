@@ -261,6 +261,58 @@ header {
     }
 }
 
+.profile-dropdown-menu {
+    border: 0 !important;
+    
+    box-shadow: 0rem 0rem .75rem grey;
+    /* &.show {
+        transform: translate(-50px, 20px);
+    } */
+
+    .profile-dropdown-menu-content {
+        position: relative;
+        padding: .5rem 1rem .5rem 1rem;
+
+        .bi-caret-up-fill {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: -22px;
+            right: 30%;
+            color: white;
+        }
+
+        .dropdown-menu-header {
+            h5 {
+                font-weight: 600;
+            }
+        }
+
+        .dropdown-menu-body {
+            .dropdown-menu-list {
+                list-style: none;
+                padding: 0;
+                margin: 1rem 0;
+
+                .dropdown-item {
+                    padding: 0;
+                    margin: .5rem 0;
+                }
+            }
+        }
+
+        .into-account-btn-wrapper {
+            .into-account-btn {
+                background-color: black;
+                color: white;
+                border: 2px solid black;
+                border-radius: .75rem;
+                padding: .75rem .5rem;
+            }
+        }
+    }
+}
+
 #sign-in {
     .modal-dialog {
         width: 350px;

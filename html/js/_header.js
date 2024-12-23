@@ -26,6 +26,18 @@ function hideAllExtensionsAndOpenRequired(clickedBtn) {
 	}
 }
 
+let userIsLogged = document.getElementById('userIsLogged').value;
+let profileBtn = document.getElementById('profile');
+// profileBtn.addEventListener('click', profileBtnClick);
+profileBtnClick();
+
+function profileBtnClick() {
+	if (userIsLogged === 'true') {
+		profileBtn.setAttribute('data-bs-toggle', 'dropdown');
+		profileBtn.setAttribute('data-bs-target', '#profileModal'); 
+	}
+}
+
 let signBtn = document.getElementById('sign-in-btn');
 let regBtn = document.getElementById('reg-btn');
 
