@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.favourite-list {
+    .cards-list-header, p {
+        text-align: center;
+
+        a {
+            color: inherit;
+        }
+    }
+}

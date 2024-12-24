@@ -38,7 +38,7 @@
     h2, h3 {
         text-transform: uppercase;
         font-weight: 600;
-        margin-bottom: 2vw;
+        margin-bottom: 1vw;
     }
 
     .filter-sort-group {
@@ -65,6 +65,7 @@
     }
 
     .cards-wrapper {
+        margin-top: 1vw;
         margin-bottom: 4rem;
         
         :nth-child(4n+4 of .card) {
@@ -133,13 +134,12 @@
                     box-shadow: .15rem .15rem 1rem var(--card-img-shadow);
                     justify-content: center;
                     transition: 1s ease;
-
                     
                     img {
                         max-height: 100%;
                     }
                 }
-                
+
                 .card-text {
                     padding: .25rem;
                 
@@ -183,13 +183,11 @@
         .card:hover {
             
             .favourite {
-                /* scale: 1.1; */
                 transition: 1s ease;
             }
 
             .card-body {
-                /* scale: 1.01; */
-                transition: 1s ease;
+                /* transition: 1s ease; */
                 box-shadow: .25rem .25rem 1.5rem var(--card-img-shadow-scale);
             }
         }
