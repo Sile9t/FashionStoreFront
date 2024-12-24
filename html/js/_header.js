@@ -34,7 +34,8 @@ profileBtnClick();
 function profileBtnClick() {
 	if (userIsLogged === 'true') {
 		profileBtn.setAttribute('data-bs-toggle', 'dropdown');
-		profileBtn.setAttribute('data-bs-target', '#profileModal'); 
+		profileBtn.setAttribute('data-bs-target', '#profileModal');
+		profileBtn.getElementsByClassName('text-info')[0].classList.remove('visually-hidden');
 	}
 }
 

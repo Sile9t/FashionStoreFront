@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --card-img-shadow: rgba(128, 128, 128, .5);
+    --card-img-shadow: rgba(128, 128, 128, .3);
+    --card-img-shadow-scale: rgba(128, 128, 128, .6);
 }
 
 @font-face {
@@ -75,28 +76,48 @@
             border: 0;
             margin-right: 3rem;
             margin-bottom: 6rem;
-            transition: 1s ease;
             
             .favourite {
                 position: absolute;
                 padding: 1rem;
-                top: 1rem;
-                right: 1rem;
+                top: 0rem;
+                right: 0rem;
                 z-index: 1;
                 border: 0;
                 background-color: transparent;
-                transition: 1s ease;
-            }
-
-
-            .favourite.chacked {
-                color: red;
-            }
-    
-            .favourite:hover {
-                scale: 1.1;
-                transition: 1s ease;
-                cursor: pointer;
+                
+                label {
+                    cursor: pointer;
+                    transition: 1s ease;
+                    
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        margin-top: 5px;
+                        color: white;
+                        stroke: black;
+                        overflow: visible;
+                    }
+        
+                    &:hover {
+                        scale: 1.1;
+                        transition: 1s ease;
+                        font-weight: 600;
+                    }
+                }
+            
+                input[type="checkbox"] {
+                    display: none;
+                }
+        
+                input[type="checkbox"]:checked + label {
+                    font-weight: 600;
+        
+                    svg {
+                        stroke: none;
+                        color: rgb(224, 36,94);
+                    }
+                } 
             }
     
             a {
@@ -109,8 +130,10 @@
                     margin-bottom: 1rem;
                     padding: 2rem 1rem;
                     aspect-ratio: 2 / 3;
-                    box-shadow: .35rem .35rem 1.5rem var(--card-img-shadow);
+                    box-shadow: .15rem .15rem 1rem var(--card-img-shadow);
                     justify-content: center;
+                    transition: 1s ease;
+
                     
                     img {
                         max-height: 100%;
@@ -134,14 +157,40 @@
                     }
                 }
             }
+
+            .size-selection {
+                
+                select {
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                select:disabled {
+                    font-size: .85rem;
+                    border: 2px solid grey;
+                }
+
+                .link {
+                    padding: 0;
+                    margin: 0;
+                    text-decoration: underline;
+                    columns: grey;
+                    opacity: 50%;
+                }
+            }
         }
         
         .card:hover {
-            scale: 1.01;
-            transition: 1s ease;
-    
+            
+            .favourite {
+                /* scale: 1.1; */
+                transition: 1s ease;
+            }
+
             .card-body {
-                box-shadow: .35rem .35rem 2.5rem var(--card-img-shadow);
+                /* scale: 1.01; */
+                transition: 1s ease;
+                box-shadow: .25rem .25rem 1.5rem var(--card-img-shadow-scale);
             }
         }
     }
@@ -309,4 +358,23 @@
         margin: 1rem 0;
         border: 2px solid black;
     }
+}
+
+.btn-prmr {
+    font-weight: 600;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0;
+    border: 0;
+    border-radius: .75rem;
+    background-color: black;
+    color: white;
+}
+
+.btn-scndr {
+    font-weight: 600;
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    border: 2px solid black;
+    border-radius: .55rem;
+    background-color: white;
 }
