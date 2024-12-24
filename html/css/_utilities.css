@@ -214,11 +214,15 @@
         text-decoration: none;
         color: black;
         width: 30%;
+        height: 100%;
+        transition: all .3s ease-in;
+        margin: .5rem;
 
         .topic {
             padding: 1rem;
             outline: var(--card-img-shadow) solid 1px;
             border-radius: .25rem;
+            height: 150px;
             
             .icon {
                 margin-bottom: .75rem;
@@ -235,8 +239,10 @@
         }
 
         &:hover {
+            background-color: rgba(240, 240, 240, 0.5);
             color: black;
-            scale: 1.01;
+            box-shadow: 0 0 .5rem grey inset;
+            transition: all .3s ease-in;
         }
     }
 

@@ -87,7 +87,6 @@ header {
             li {
                 list-style-type: none;
                 padding: 5px;
-                /* text-transform: uppercase; */
                 font-size: 14px;
                 font-weight: 600;
                 
@@ -95,7 +94,6 @@ header {
                     border: 0;
                     background-color: transparent;
                     font-weight: 600;
-                    /* text-transform: uppercase; */
                 }
 
                 button:hover {
@@ -123,7 +121,8 @@ header {
 
         .icons-search-wrapper {
             margin: 0px 0px 0px 20px;
-            width: 20%;
+            min-width: 250px;
+            max-width: 50%;
 
             .icons-wrapper {
                 margin-bottom: 1rem;
@@ -265,10 +264,7 @@ header {
     border: 0 !important;
     
     box-shadow: 0rem 0rem .75rem grey;
-    /* &.show {
-        transform: translate(-50px, 20px);
-    } */
-
+    
     .profile-dropdown-menu-content {
         position: relative;
         padding: .5rem 1rem .5rem 1rem;
