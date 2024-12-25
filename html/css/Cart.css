@@ -1,5 +1,90 @@
 @charset "UTF-8";
 
+.cart-sum-wrapper {
+
+    .cart-list-wrapper {
+        .list-header {
+            margin-right: 2rem;
+            h2, h3 {
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 1vw;
+            }
+        }
+    
+        .list-wrapper {
+            .list-item {
+                padding: 1vw;
+                
+                img {
+                    width: 15vw;
+                    border: 1px solid rgba(0, 0, 0, .125);
+                    border-radius: .5rem;
+                    margin-bottom: 1rem;
+                    padding: 2rem 1rem;
+                    aspect-ratio: 2 / 3;
+                    box-shadow: .15rem .15rem 1rem var(--card-img-shadow);
+                    justify-content: center;
+                }
+
+                .purchase-info {
+                    border-top: 2px solid var(--card-img-shadow);
+                    padding: 2vw 0 0 3vw;
+
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .short-info {
+
+                        .brand {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+    
+                    }
+    
+                    .cost-info {
+                        .cost {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+                    }
+    
+                    .size-quanity-wrapper {
+                        :nth-child(n+1 of div + .header, .value)
+                        
+                        .size {
+    
+                        }
+    
+                        .quanity {
+    
+                        }
+    
+                        .added-to-favourite {
+    
+                        }
+                    }
+                }
+            }
+
+        }
+    
+        .purch-sum-wrapper {
+    
+        }
+    }
+    
+    .purch-sum-wrapper {
+        a {
+            color: black;
+        }
+    
+    }
+}
+
 .favourite-list {
     .cards-list-header, p {
         text-align: center;

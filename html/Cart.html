@@ -18,35 +18,64 @@
 <body>
     <div id="header"></div>
     <main id="main" class="justify-content-around">
-        <div class="cart-list-wrapper d-flex flex-row">
-            <div class="list-header d-flex flex-column">
-                <h2 class="header">Корзина</h2>
-                
-            </div>
-            <div class="list-wrapper">
-                <div class="cart-list-item">
-                    <img src="" alt="">
+        <div class="cart-sum-wrapper d-flex flex-row justify-content-between">
+            <div class="cart-list-wrapper d-flex flex-column flex-fill">
+                <div class="list-header d-flex flex-column">
+                    <h2 class="header">Корзина</h2>
+                    <div class="duties-notice d-flex justify-content-end">
+                        Пошлины включены в цену
+                    </div>
+                </div>
+                <div class="list-wrapper flex-fill">
+                    <div class="list-item d-flex flex-row">
+                        <img src="/html/source/img/prod1.png" alt="">
+                        <div class="purchase-info d-flex flex-row flex-fill justify-content-between">
+                            <div class="short-info">
+                                <p class="season">Новый сезон</p>
+                                <p class="brand">Бренд</p>
+                                <p class="description">описание товара</p>
+                            </div>
+                            <div class="cost-info">
+                                <p class="cost">Цена &#x20bd;</p>
+                                <p class="duties">Пошлины включены</p>
+                            </div>
+                            <div class="size-quanity-wrapper">
+                                <div class="size">
+                                    <p class="header">Размер</p>
+                                    <p class="value">M</p>
+                                </div>
+                                <div class="quanity">
+                                    <p class="header">Количество</p>
+                                    <p class="value">1</p>
+                                </div>
+                                <div class="added-to-favourite">
+                                    Добавлено в избранное
+                                </div>
+                            </div>
+                            <button class="btn-close" type="button"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="purch-sum-wrapper">
                 <a href="">Продолжить покупки</a>
                 <div class="purch-sum">
                     <h3 class="header">Сумма заказа</h3>
-                    <div class="purchases">
+                    <div class="purchases d-flex justify-content-between">
                         <p class="text">Товары</p>
-                        <p class="cost"></p>
+                        <p class="cost">Цена &#x20bd;</p>
                     </div>
-                    <div class="delivery">
+                    <div class="delivery d-flex justify-content-between">
                         <p class="text">Доставка</p>
-                        <p class="cost"></p>
+                        <p class="cost">Цена &#x20bd;</p>
                     </div>
                     <hr>
-                    <div class="summary">
+                    <div class="summary d-flex justify-content-between">
                         <p class="text">Итого</p>
-                        <p class="cost"></p>
+                        <p class="cost">Цена &#x20bd;</p>
                     </div>
                 </div>
-                <button type="submit">Перейти к оплате</button>
+                <button class="btn-prmr" type="submit">Перейти к оплате</button>
             </div>
         </div>
         <div class="favourite-list cards-list-wrapper">
