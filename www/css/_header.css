@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('/html/css/_utilities.css');
+@import url('_utilities.css');
 
 :root {
     --light-grey: rgba(180, 180, 180, .8);
@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: GardensC;
-    src: url("/html/source/font/GardensC_03_1.otf");
+    src: url("/www/source/font/GardensC_03_1.otf");
 }
 
 @font-face {
     font-family: MV-Skifer;
-    src: url("/html/source/font/MV-SKIFER.otf");
+    src: url("/www/source/font/MV-SKIFER.otf");
     font-weight: 600;
 }
 
