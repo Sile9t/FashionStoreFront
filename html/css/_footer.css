@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: Inter;
-    src: url("/www/source/font/Inter-VariableFont_opsz\,wght.ttf");
+    src: url("../source/font/Inter-VariableFont_opsz\,wght.ttf");
     font-weight: 300;
 }
 

@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: Angst;
-    src: url("/www/source/font/Angst-Thin.otf");
+    src: url("../source/font/Angst-Thin.otf");
 }
 
 @font-face {
     font-family: Inter;
-    src: url("/www/source/font/Inter-VariableFont_opsz\,wght.ttf");
+    src: url("../source/font/Inter-VariableFont_opsz\,wght.ttf");
     font-size: 12px;
     font-weight: 300;
 }

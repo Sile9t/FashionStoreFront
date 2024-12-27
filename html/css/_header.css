@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: GardensC;
-    src: url("/www/source/font/GardensC_03_1.otf");
+    src: url("../source/font/GardensC_03_1.otf");
 }
 
 @font-face {
     font-family: MV-Skifer;
-    src: url("/www/source/font/MV-SKIFER.otf");
+    src: url("../source/font/MV-SKIFER.otf");
     font-weight: 600;
 }
 

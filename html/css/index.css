@@ -1,20 +1,5 @@
 @charset "UTF-8";
-
-:root {
-    --card-img-shadow: rgba(128, 128, 128, .5);
-}
-
-@font-face {
-    font-family: Angst;
-    src: url("/www/source/font/Angst-Thin.otf");
-}
-
-@font-face {
-    font-family: Inter;
-    src: url("/www/source/font/Inter-VariableFont_opsz\,wght.ttf");
-    font-size: 12px;
-    font-weight: 300;
-}
+@import url("./_utilities.css");
 
 body {
     
